@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1ABC9C"
+    >
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quiz_button"
+        android:layout_alignParentTop="true"
+        android:background="#1ABC9C">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="40dp"
+            android:background="#002040">
+
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="22sp"
+            android:id="@+id/question_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:background="@drawable/questionback"
+            android:paddingTop="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry "
+            android:textColor="@android:color/black" />
+
+
+        <ImageView
+            android:id="@+id/audio_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/question_id"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:src="@drawable/pink_audio1" />
+
+        <ImageView
+            android:id="@+id/practice_image_view"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"
+            android:src="@drawable/correct"
+            android:layout_below="@+id/audio_icon"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/quiz_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/btnshape"
+        android:text="Quiz"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_end_of_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="End of Module 1"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/retry_button"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_end_of_session"
+        android:background="@drawable/quiz_button_image"
+        android:text="Retake the test"
+      />
+</RelativeLayout>
+
+
